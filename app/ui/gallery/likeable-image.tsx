@@ -4,7 +4,8 @@ import { Flag } from "@/app/lib/definitions";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { parseCookies, setCookie } from "nookies";
-import { Heart, Info } from "lucide-react";
+import { NotebookPen as Heart, 
+  Info } from "lucide-react";
 import Link from "next/link";
 import { saveLinked } from "./saveLinked";
 import { getImageQuality } from "@/lib/utils";
