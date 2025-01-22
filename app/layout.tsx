@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     locale: 'ko_KR',
     type: 'website',
-    url: "https://flag123.diginori.com",
+    url: "https://vim.sunsin.shop/",
     images: {
-      url: "https://flag123.diginori.com/og.png",
+      url: "https://vim-sunsinshop.vercel.app/repository-open-graph-sunsin-vim.png",
       alt: DESCRIPTION,
     }
   },
@@ -71,10 +71,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '순십샵 학습 기록장',
     description: DESCRIPTION,
-    siteId: 'samdulshop',
+    siteId: 'ppabam',
     creator: '순십샵',
-    creatorId: 'samdulshop',
-    images: ['https://flag123.diginori.com/twitter-image.png'], // Must be an absolute URL
+    creatorId: 'ppabam',
+    images: ['https://vim-sunsinshop.vercel.app/repository-open-graph-sunsin-vim.png'], // Must be an absolute URL
   },
 };
 
