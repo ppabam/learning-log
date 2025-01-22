@@ -39,10 +39,10 @@ export default function LikeableImage({
     setTimeout(() => setAnimating(false), 500); // 0.5초 후 애니메이션 비활성화
 
     const updatedLiked = !liked;
-    saveLikedStatusToCookies(flag.id, updatedLiked);
+    //saveLikedStatusToCookies(flag.id, updatedLiked);
     updateLocalStorage(flag.id, updatedLiked);
     setLikeCount((prev) => (updatedLiked ? Number(prev) + 1 : Number(prev) - 1));
-    setLiked(updatedLiked);
+    //setLiked(updatedLiked);
 
     // saver one-by-one
     saveLinked();
