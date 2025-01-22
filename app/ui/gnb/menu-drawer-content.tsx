@@ -83,10 +83,10 @@ export function MenuDrawerContent({ total_flags, total_likes }: { total_flags: n
       <div className="mx-auto w-full max-w-sm">
         <DrawerHeader>
           <DrawerTitle className="text-center">
-            12.3 계엄배 천하제일 재기발랄 깃발대회
+            순십샵 학습 기록장
           </DrawerTitle>
           <DrawerDescription className="text-border text-center text-gray-400">
-            민주주의 해방전선 나만 깃발 없엉 총연맹
+          순십샵 학습 기록장
           </DrawerDescription>
         </DrawerHeader>
 

@@ -23,10 +23,10 @@ export default function Gnb({ total_flags, total_likes }: { total_flags: number,
 
           <h1 className="text-xl font-bold text-green-300 flex space-x-1">
             <span className="text-indigo-400 hidden lg:inline">
-              12.3 계엄배
+              순신샵
             </span>
             <span className="text-indigo-200 hidden md:inline">
-              천하제일 깃발대회
+              학습 기록장
             </span>
           </h1>
         </div>
