@@ -21,43 +21,43 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const DESCRIPTION = "12.3 계엄배 천하제일 깃발대회 by 민주주의 해방전선 나만 깃발 없엉 총연맹, 재기발랄 천하제일 깃발대회 🚩 겔러리 🖼️ 저장소 🗃️ 검색 🔎";
+const DESCRIPTION = "Tracking the progress of my learning journey with topics such as Vim and Pandas 10-minute guide. / 🍴 forked from dMario24/flag123";
 
 export const metadata: Metadata = {
   generator: 'Next.js',
-  applicationName: '천하제일깃발대회',
+  applicationName: '순십샵 학습 기록장',
   referrer: 'origin-when-cross-origin',
   keywords: ['martial law',
     '2024 South Korean martial law crisis',
     '계엄',
-    '천하제일깃발대회',
-    '깃없총',
+    '순십샵 학습 기록장',
+    '@빠밤',
     '나만깃발없엉',
     '재기발랄',
     '탄핵',
     '윤석열',
     '윤건희',
-    '천하제일깃발대회',
-    '민주주의 해방전선 나만 깃발 없엉 총연맹',
+    '순십샵 학습 기록장',
+    '순십샵',
     '나만 깃발 없엉 총연맹',
 
   ],
-  authors: [{ name: 'TomSawyer' }, { name: 'Josh', url: 'https://flag123.diginori.com' }],
-  creator: '민주주의 해방전선 나만 깃발 없엉 총연맹',
-  publisher: '깃없총',
+  authors: [{ name: 'TomSawyer' }, { name: 'Josh', url: 'https://vim.sunsin.shop/' }],
+  creator: '순십샵',
+  publisher: '@빠밤',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  title: "천하제일깃발대회 by 깃없총",
+  title: "순십샵 학습 기록장 by @빠밤",
   description: DESCRIPTION,
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "천하제일깃발대회",
-    siteName: "12.3 계엄배 천하제일 깃발 대회",
+    title: "순십샵 학습 기록장",
+    siteName: "순십샵 학습 기록장",
     description: DESCRIPTION,
     locale: 'ko_KR',
     type: 'website',
@@ -69,10 +69,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '12.3 계엄배 천하제일깃발대회',
+    title: '순십샵 학습 기록장',
     description: DESCRIPTION,
     siteId: 'samdulshop',
-    creator: '민주주의 해방전선 나만 깃발 없엉 총연맹',
+    creator: '순십샵',
     creatorId: 'samdulshop',
     images: ['https://flag123.diginori.com/twitter-image.png'], // Must be an absolute URL
   },
