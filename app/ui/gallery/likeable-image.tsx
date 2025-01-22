@@ -3,7 +3,7 @@
 import { Flag } from "@/app/lib/definitions";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { parseCookies, setCookie } from "nookies";
+import { parseCookies } from "nookies";
 import { NotebookPen as Heart, 
   Info } from "lucide-react";
 import Link from "next/link";
@@ -119,25 +119,6 @@ export default function LikeableImage({
 
 const COOKIEKEY_PREFIX = 'LikedStatusV1_';
 
-/**
- * 특정 플래그의 좋아요 상태를 브라우저 쿠키에 저장합니다.
- * 
- * @param flag_id - 좋아요 상태를 저장할 플래그의 ID.
- * @param updatedLiked - 플래그가 좋아요 상태인지 여부 (true: 좋아요, false: 좋아요 해제).
- * 
- * 쿠키는 1년간 유지되며, 사이트 전체 경로("/")에서 접근 가능합니다.
- */
-function saveLikedStatusToCookies(
-  flag_id: number,
-  updatedLiked: boolean,
-  cookieKeyPrefix = COOKIEKEY_PREFIX,
-  cookieMaxAge = 31536000 // 365 * 24 * 60 * 60
-) {
-  setCookie(null, `${cookieKeyPrefix}${flag_id}`, String(updatedLiked), {
-    maxAge: cookieMaxAge,
-    path: "/",
-  });
-}
 
 /**
  * 특정 플래그의 좋아요 상태를 브라우저 쿠키에서 가져옵니다.
