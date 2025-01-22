@@ -28,13 +28,13 @@ export default function Search() {
       const width = window.innerWidth;
       // console.log(`window.innerWidth:${width}`);
       if (width >= 768) {
-        setPlaceholder("🔍 검색 or 📤 업로드 이미지 🚩 이름 입력 ✍️");
+        setPlaceholder("🔍 학습/플리 검색 or 📤 업로드 이미지 이름 입력");
       } else if (width >= 400) {
-        setPlaceholder("🔍 계엄배 🏆천하제일깃발대회");
+        setPlaceholder("🔍 순신삽 학습 로그");
       } else if (width >= 350) {
-        setPlaceholder("🔍 천하제일🏆깃발대회");
+        setPlaceholder("🔍 순신삽 학습 로그");
       } else {
-        setPlaceholder("천하제일깃발대회");
+        setPlaceholder("순신삽 학습 로그");
       }
     };
 
