@@ -1,0 +1,17 @@
+###
+GET http://localhost:3000/api/flags?k123=1234
+
+
+### 
+GET http://localhost:3000/api/flags/db?k123=1234
+
+
+###
+POST http://localhost:3000/api/flags/insert
+Content-Type: application/json
+Authorization: Bearer 1234
+
+{ 
+    "name": "테스트", 
+    "img_url": "https://i.ibb.co/3v8Xjdf/FB-IMG-1734237228298.jpg" 
+}
