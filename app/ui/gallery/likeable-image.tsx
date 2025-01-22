@@ -4,8 +4,7 @@ import { Flag } from "@/app/lib/definitions";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { parseCookies } from "nookies";
-import { NotebookPen as Heart, 
-  Info } from "lucide-react";
+import { NotebookPen ,Heart, Info } from "lucide-react";
 import Link from "next/link";
 import { saveLinked } from "./saveLinked";
 import { getImageQuality } from "@/lib/utils";
@@ -48,6 +47,7 @@ export default function LikeableImage({
     saveLinked();
   };
 
+  const IconHeartorNotebookPen = flag.name.includes("플리") ? Heart : NotebookPen;
 
   return (
     <div className="relative w-full overflow-hidden rounded-lg shadow-lg bg-gray-800 aspect-square">
@@ -76,12 +76,13 @@ export default function LikeableImage({
                 : "bg-gray-700 text-gray-300"
                 }`}
             >
-              <Heart
+              <IconHeartorNotebookPen
                 className={`w-5 h-5 transition-transform duration-500 ${animating
                   ? "animate-heartbeat"
                   : "scale-100"
                   }`}
               />
+              
             </button>
             {/* 말풍선 부분 */}
             <div className="relative flex items-center ml-2">
