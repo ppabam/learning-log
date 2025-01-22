@@ -1,6 +1,6 @@
 # 🚩  learning journey
 - Tracking the progress of my learning journey with topics such as Vim and Pandas 10-minute guide.
-- forked from dMario24/flag123
+- forked from https://github.com/dMario24/flag123/releases/tag/251.21.3
 
 ### 📝 Initial Data & DBMS
 - [use vercel-postgres](https://vercel.com/docs/storage/vercel-postgres)
