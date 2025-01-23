@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: korean-age-calculator
+Version: 1.0.0
+Summary: 한국식 나이계산기
+Home-page: https://becky2sawyer.github.io/korean-age-calculator
+Author: pysatellite
+Author-email: pysatellite@gmail.com
+License: GNU General Public License (GPL)
+Project-URL: Bug Tracker, https://github.com/becky2sawyer/korean-age-calculator/issues
+Platform: macOS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# korean_age_calculator
+### 한국식 나이 계산기
+
+![logo](https://becky2sawyer.github.io/korean-age-calculator/img/logo.png)
+
+```
+The age calculation method in Korea is unique. 
+From the moment when life was conceived as a fetus, we have an age.
+```
+
+- [https://pypi.org/project/korean_age_calculator](https://pypi.org/project/korean_age_calculator)
+
+# User Guide
+- [https://becky2sawyer.github.io/korean-age-calculator](https://becky2sawyer.github.io/korean-age-calculator)
+
+
+
+

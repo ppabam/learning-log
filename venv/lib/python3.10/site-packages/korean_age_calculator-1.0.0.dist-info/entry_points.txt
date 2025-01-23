@@ -1,0 +1,3 @@
+[console_scripts]
+korean-age-calculator = korean_age_calculator:main
+
