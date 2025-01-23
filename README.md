@@ -83,6 +83,17 @@ $ npm install
 $ npm run dev
 ```
 
+### Dev Python
+```bash
+$ pyenv global
+3.10.12
+# $ python -m venv venv
+$ source venv/bin/activate
+# $pip install -r requirements.txt
+$ uvicorn api.index:app --reload
+```
+
+
 ### Test
 ```bash
 $ npx jest -t "should correctly join URL parts into a complete URL"

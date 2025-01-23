@@ -6,30 +6,12 @@ import { Flag } from "@/app/lib/definitions";
 import Link from "next/link";
 
 interface MorphemeSectionProps {
-    parentName: string;
     parentId: number;
+    morphemes: string[];
 }
 
-export function MorphemeSection({ parentName, parentId }: MorphemeSectionProps) {
-    const [morphemes, setMorphemes] = useState<string[]>([]);
+export function MorphemeSection({ parentId, morphemes }: MorphemeSectionProps) {
     const [relatedFlags, setRelatedFlags] = useState<Flag[]>([]);
-
-    useEffect(() => {
-        const fetchMorphemes = async () => {
-            try {
-                const response = await fetch(`/api/morphemes?text=${encodeURIComponent(parentName)}`);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setMorphemes(data);
-            } catch (error) {
-                console.error('Failed to fetch morphemes:', error);
-            }
-        };
-
-        fetchMorphemes();
-    }, [parentName]);
 
     useEffect(() => {
         // 로컬 스토리지에서 flags 데이터를 가져오기

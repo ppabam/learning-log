@@ -118,7 +118,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         </CardContent>
       </Card>
 
-      <ParentImageGrid parentId={flag.id} parentName={flag.name}  />
+      <ParentImageGrid parentId={flag.id} parentName={flag.name}   />
 
       {/* Map Section */}
       <MapSection latitude={latitude} longitude={longitude} />

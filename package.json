@@ -1,14 +1,15 @@
 {
   "name": "learning-log",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"npm run fastapi-dev\"",
     "lh": "next dev -H 0.0.0.0 -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload"
   },
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^4.5.1",
@@ -55,7 +56,8 @@
     "tailwindcss-animate": "^1.0.7",
     "use-debounce": "^10.0.4",
     "vaul": "^1.1.2",
-    "zod": "^3.24.1"
+    "zod": "^3.24.1",
+    "concurrently": "^9.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",
