@@ -17,12 +17,13 @@ export function MorphemeSection({ parentName, parentId }: MorphemeSectionProps) 
     useEffect(() => {
         const fetchMorphemes = async () => {
             try {
-                const response = await fetch(`/api/morphemes?text=${encodeURIComponent(parentName)}`);
+                // const response = await fetch(`/api/morphemes?text=${encodeURIComponent(parentName)}`);
+                const response = await fetch(`/api/py/getNouns/${encodeURIComponent(parentName)}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
                 const data = await response.json();
-                setMorphemes(data);
+                setMorphemes(data.nouns);
             } catch (error) {
                 console.error('Failed to fetch morphemes:', error);
             }
