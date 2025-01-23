@@ -12,6 +12,20 @@ export default async function ParentImageGrid({
   // Fetch child images by parentId
   const childImages = await fetchFlagsByParentId(parentId);
 
+    // Parent 이미지 데이터를 서버에서 가져옴
+    const response = await fetch(`${process.env.BASE_URL}/api/py/getNouns/${parentName}`);
+    // const response = await fetch(`/api/py/getNouns/${encodeURIComponent(parentName)}`, {
+    //   cache: 'no-store', // 최신 데이터를 가져오기 위해 설정
+    // });
+  
+    let morphemes: string[] = [];
+      if (response.ok) {
+          const data = await response.json();
+          morphemes = data.nouns || [];
+      } else {
+          console.error("Failed to fetch parent images");
+      }
+
   return (
     <div className="w-full max-w-2xl mx-auto px-4 py-4">
       {/* Section 1: 소속 이미지 */}
@@ -37,7 +51,7 @@ export default async function ParentImageGrid({
       )}
 
       {/* Section 2: 형태소분석 */}
-      <MorphemeSection parentName={parentName} parentId={parentId} />
+      <MorphemeSection parentId={parentId} morphemes={morphemes} />
     </div>
   );
 }

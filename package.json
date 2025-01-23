@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run next-dev\" \"npm run fastapi-dev\"",
+    "dev": "concurrently \"next dev\" \"npm run fastapi-dev\"",
     "lh": "next dev -H 0.0.0.0 -p 3000",
     "build": "next build",
     "start": "next start",
