@@ -1,6 +1,6 @@
 import { fetchFlagById } from "@/app/lib/data";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
-import MapSection from "@/app/ui/map/MapSection";
+// import MapSection from "@/app/ui/map/MapSection";
 import {
   FaSearch as Home,
   FaTwitterSquare as Twitter,
@@ -8,7 +8,7 @@ import {
   FaEdit as Edit,
 } from "react-icons/fa";
 import { GiBugNet as Bug } from "react-icons/gi";
-import ParentImageGrid from "@/app/ui/detail/ParentImageGrid";
+// import ParentImageGrid from "@/app/ui/detail/ParentImageGrid";
 
 // https://react-icons.github.io/react-icons/icons/si/
 // import { SiKakaotalk } from "react-icons/si";
@@ -62,7 +62,7 @@ export async function generateMetadata({
 export default async function Page({ params }: { params: { id: string } }) {
   const id = params.id;
   const flag = await fetchFlagById(id);
-  const { latitude, longitude } = flag;
+  // const { latitude, longitude } = flag;
 
   const headersList = headers();
   const host = headersList.get("host");
@@ -118,10 +118,10 @@ export default async function Page({ params }: { params: { id: string } }) {
         </CardContent>
       </Card>
 
-      <ParentImageGrid parentId={flag.id} parentName={flag.name}   />
+      {/* <ParentImageGrid parentId={flag.id} parentName={flag.name}   /> */}
 
       {/* Map Section */}
-      <MapSection latitude={latitude} longitude={longitude} />
+      {/* <MapSection latitude={latitude} longitude={longitude} /> */}
     </div>
   );
 }
